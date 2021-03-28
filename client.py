@@ -9,8 +9,8 @@ import numpy as np
 
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-# client_socket.connect(('0.tcp.ngrok.io', 19194))
-client_socket.connect(('10.18.15.41', 8485))
+client_socket.connect(('0.tcp.ngrok.io', 19194))
+# client_socket.connect(('10.18.15.41', 8485))
 connection = client_socket.makefile('wb')
 
 cam = cv2.VideoCapture(0)

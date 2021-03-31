@@ -9,8 +9,8 @@ import imutils
 
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect(('0.tcp.ngrok.io', 19194))
-# client_socket.connect(('192.168.50.244', 8485))
+# client_socket.connect(('0.tcp.ngrok.io', 19194))
+client_socket.connect(('10.19.15.138', 8485))
 
 cam = cv2.VideoCapture(0)
 img_counter = 0
@@ -30,7 +30,7 @@ while True:
     data = pickle.dumps(image, 0)
     size = len(data)
 
-    if img_counter%10==0:
+    if img_counter%3==0:
         client_socket.sendall(struct.pack(">L", size) + data)
         cv2.imshow('client',frame)
         

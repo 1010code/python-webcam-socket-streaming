@@ -29,6 +29,16 @@ ifconfig
 
 > For Linux and Ubuntu users. The required IP address will be for Wifi LAN (inet).
 
-#### 
+#### client-server model
+- Server creates socket on startup
+- May serve several  clients concurrently
+- A client should know the server IP and port
+
+![](./screenshot/img01.png)
+
+#### Python Server module
+
+![](./screenshot/img02.png)
+
 ## Reference
 - [kittinan/socket](https://gist.github.com/kittinan/e7ecefddda5616eab2765fdb2affed1b)

@@ -91,6 +91,8 @@ python client.py
 
 ![](./screenshot/demo.gif)
 
+![](./screenshot/demo-2.gif)
+
 ## Reference
 - [kittinan/socket](https://gist.github.com/kittinan/e7ecefddda5616eab2765fdb2affed1b)
 - [Socket programming and OpenCv in Python](https://www.youtube.com/watch?v=7-O7yeO3hNQ)

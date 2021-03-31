@@ -13,7 +13,7 @@ In standard interent protocols like TCP and UDP, socket address is the combinati
 socket address = (IP address, port number)
 ```
 
-## How to find IP address
+## How to find IP address?
 Depending on the operating system, you can easily find the IP address of your machine. Go to the terminal window and run this command:
 #### macOS
 
@@ -46,17 +46,46 @@ ifconfig
 ![](./screenshot/img03.png)
 
 ## Video data transmission
-#### At server side
+### At server side
 - With OpenCV get video frames of webcam
 - With pickle serialize frame to byte data
 - Pack each frame data using struct module
 - Send data to client and display frame
 
-#### At client side
+### At client side
 - Receive packets and append them to data
 - Unpack the data using struct module
 - Load the frame using pickle
 - Display the frame at client side
+
+## Getting Started
+### Clone Project
+you can create a new project based on this repo by doing the following:
+
+```
+git clone https://github.com/1010code/python-webcam-socket-streaming.git
+```
+
+### Installation
+When that's done, install the project dependencies.
+
+```
+pip install -r requirements.txt
+```
+
+#### Run server
+open terminal and execute `server.py`. And we'll create TCP socket and listening 8485 port.
+
+```
+python server.py
+```
+
+### Run client
+After running the `server.py`, copy paste the IP and PORT to `client.py`. After doing that, then start client.
+
+```
+python client.py
+```
 
 
 ## Reference

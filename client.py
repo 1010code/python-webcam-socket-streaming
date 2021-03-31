@@ -30,7 +30,7 @@ while True:
     data = pickle.dumps(image, 0)
     size = len(data)
 
-    if img_counter%3==0:
+    if img_counter%10==0:
         client_socket.sendall(struct.pack(">L", size) + data)
         cv2.imshow('client',frame)
         

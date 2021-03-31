@@ -87,6 +87,9 @@ After running the `server.py`, copy paste the IP and PORT to `client.py`. After 
 python client.py
 ```
 
+## Demo
+
+![](./screenshot/demo.gif)
 
 ## Reference
 - [kittinan/socket](https://gist.github.com/kittinan/e7ecefddda5616eab2765fdb2affed1b)

@@ -29,14 +29,14 @@ ifconfig
 
 > For Linux and Ubuntu users. The required IP address will be for Wifi LAN (inet).
 
-#### client-server model
+## client-server model
 - Server creates socket on startup
 - May serve several  clients concurrently
 - A client should know the server IP and port
 
 ![](./screenshot/img01.png)
 
-#### Python Server module
+## Python Server module
 
 ![](./screenshot/img02.png)
 

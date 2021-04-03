@@ -1,6 +1,9 @@
 # python-webcam-socket-streaming
 Python OpenCV webcam sending frames through TCP socket. 
 
+## YouTube Tutorial
+[<img src="./screenshot/cover.png" width="550px">](https://www.youtube.com/watch?v=MQ8JfdvA7Yk)
+
 ## What is a network Socket?
 - A software structure within a network node
 - Serves as an endpoint to send & receive

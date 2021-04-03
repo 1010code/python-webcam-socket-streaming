@@ -4,7 +4,7 @@ Python OpenCV webcam sending frames through TCP socket.
 ## What is a network Socket?
 - A software structure within a network node
 - Serves as an endpoint to send & receive
-- A combination of protocpl type, IP adress and Port number for data communication
+- A combination of protocpl type, IP address and Port number for data communication
 
 ## Implementation of Sockets
 In standard interent protocols like TCP and UDP, socket address is the combination of:
@@ -88,10 +88,21 @@ python client.py
 ```
 
 ## Demo
+- PC 1: run server.py
+- PC 1: run client.py
 
 ![](./screenshot/demo.gif)
 
+
+- PC 1: run server.ipynb
+- PC 1: run client.py
+
 ![](./screenshot/demo-2.gif)
+
+- PC 1: run server.ipynb
+- PC 2: run client.py
+
+![](./screenshot/demo-3.gif)
 
 ## Reference
 - [kittinan/socket](https://gist.github.com/kittinan/e7ecefddda5616eab2765fdb2affed1b)

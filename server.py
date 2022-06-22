@@ -29,6 +29,10 @@ print("payload_size: {}".format(payload_size))
 while True:
     while len(data) < payload_size:
         data += conn.recv(4096)
+        if not data:
+            cv2.destroyAllWindows()
+            conn,addr=s.accept()
+            continue
     # receive image row data form client socket
     packed_msg_size = data[:payload_size]
     data = data[payload_size:]
